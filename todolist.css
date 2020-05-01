@@ -1,0 +1,75 @@
+body{
+    background: #ef32d9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #89fffd, #ef32d9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #89fffd, #ef32d9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+}
+/*the class that changes the color of the list item clicked*/
+.completed{
+    color: blue;
+    text-decoration: line-through;
+}
+#container{
+        background-color: #f1f1f1;
+        margin: 100px auto;
+        width: 360px;
+        box-shadow: 0, 0, 3px, rgba(0, 0, 0, 0.1);
+}
+h1{
+    background-color: #8c93f5;
+    margin: 0;
+    padding: 13px 13px 13px 20px;
+    text-transform: uppercase;
+    font-weight: normal;
+    
+}
+.fa-pencil-alt{
+    float: right;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    background-color:#fff;
+    height: 40px;
+    line-height: 40px; 
+}
+
+li:nth-child(2n){
+    background-color: #f1f1f1;
+    
+}
+input{
+    font-size: 20px;
+    width: 100%;
+    margin: 0;
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box;
+    color: #d3d3d3;
+    border-right: 2px solid rgba(0, 0, 0, 0);
+    border-left: 2px solid rgba(0, 0, 0, 0);
+  
+}
+input:focus{
+    background-color: white;
+    border: 2px solid blue;
+}
+
+span{
+    background-color: #ff0000;
+    height: 40px;
+    width: 0;
+    text-align: center;
+    margin-right: 20px;
+    display: inline-block;  
+    color: white;
+    transition: 0.2s linear;
+    opacity: 0;
+}
+li:hover span{
+    width:40px;
+    opacity: 1;
+}
